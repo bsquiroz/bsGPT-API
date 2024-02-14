@@ -21,11 +21,18 @@ export const orthographyCheckUseCase = async (
         
         Si no hay errores, debes de retornar un mensaje de felicitaciones.
 
-        Ejemplo de salida:
+        Ejemplo de salida cuando hay errores:
         {
           userScore: number,
           errors: string[], // ['error -> solución']
           message: string, //  Usa emojis y texto para felicitar al usuario
+        }
+
+        Ejemplo de salida cuando no se encuentran errores:
+        {
+          userScore: number, // debe ser 100, ya que no hubieron errores
+          errors: string[], // un arreglo vacio, porque no hay errores
+          message: string, //  Un mensahe de felicitacion porque todo salio bien
         }
         `,
       },
